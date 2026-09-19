@@ -1,0 +1,281 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\Huge \scshape Leonard Eckert} \\ \vspace{1pt}
+    \small +49 17657250600 $|$ \href{mailto:leonard.eckert99@gmail.com}{\underline{leonard.eckert99@gmail.com}} $|$
+    \href{https://linkedin.com/in/leonard-eckert/}{\underline{linkedin.com/in/leonard-eckert}} $|$ 25.06.1999
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Stockholm University}{Stockholm, Sweden}
+      {Master of Science, AI and Linguistics}{Aug. 2026 -- Aug. 2028}
+    \resumeSubheading
+      {DHBW Stuttgart}{Stuttgart, Germany}
+      {Bachelor of Science, Business Information Systems (Data Science)}{Sep. 2022 -- Sep. 2025}
+      \resumeItemListStart
+        \resumeItem{Combined Work and Study Program with IBM}
+        \resumeItem{Thesis: Design and Implementation of a Semantic Alignment Agent for Natural Language Generation (1.4 German GPA, top 10\% of the year)}
+      \resumeItemListEnd
+    \resumeSubheading
+      {Karlstad University}{Karlstad, Sweden}
+      {Exchange Semester}{Jan. 2024 -- June 2024}
+    \resumeSubheading
+      {Deutsches Elektronen-Synchrotron (DESY)}{Hamburg, Germany}
+      {Apprenticeship, Computer Science Expert (Software Development)}{Sep. 2019 -- July 2022}
+      \resumeItemListStart
+        \resumeItem{Physics Research Institute}
+        \resumeItem{Exams passed with excellent grades (93\%), top 5\% of the year}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------
+\section{Work Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Data Engineer}{Sep. 2025 -- Now}
+      {Bosch Research}{Stuttgart, Germany}
+      \resumeItemListStart
+        \resumeItem{Developed and maintained a Databricks data pipeline written in Python}
+        \resumeItem{Supported the infrastructure team with platform development in MS Azure}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Intern}{June 2025 -- Sep. 2025}
+      {IBM Client Engineering}{Vienna, Austria}
+      \resumeItemListStart
+        \resumeItem{Developed an innovative agent-based demo using WatsonX Orchestrate for partner enablement}
+        \resumeItem{Performed advanced data analysis using Python to process and extract insights from complex datasets}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Research Intern}{Feb. 2025 -- May 2025}
+      {IBM Research}{Dublin, Ireland}
+      \resumeItemListStart
+        \resumeItem{High focus on development of the NLP agent for my Bachelor thesis}
+        \resumeItem{Developed a custom LangChain component integrating LLaMA, DeepSeek, and Granite models into a unified interface}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Intern}{Sep. 2024 -- Nov. 2024}
+      {IBM Client Engineering}{Singapore}
+      \resumeItemListStart
+        \resumeItem{Built and deployed a containerized application on OpenShift to analyse JVM garbage collector memory allocation in Java}
+        \resumeItem{Created presentation materials for client-facing workshops}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Research Intern}{June 2024 -- Sep. 2024}
+      {IBM Research}{Dublin, Ireland}
+      \resumeItemListStart
+        \resumeItem{Designed and implemented a smart evaluation framework for Large Language Models, focusing on tailored performance metrics in Python}
+        \resumeItem{Containerized and deployed the application for scalable and reproducible execution}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Intern}{Nov. 2023 -- Jan. 2024}
+      {IBM Consulting}{Wilhelmshaven, Germany}
+      \resumeItemListStart
+        \resumeItem{Contributed to a SASPF (SAP Bundeswehr solution) project for the German Navy}
+        \resumeItem{Supported a project to improve material readiness and availability}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Research Intern}{June 2023 -- Sep. 2023}
+      {IBM Research}{Z\"urich R\"uschlikon, Switzerland}
+      \resumeItemListStart
+        \resumeItem{Implemented a custom schema for polymorphic GraphQL in Java}
+        \resumeItem{Built a small demo in Neo4j to model and visualize a knowledge graph}
+        \resumeItem{Modified an existing Kafka consumer to improve data processing efficiency}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Intern}{Dec. 2022 -- Mar. 2023}
+      {IBM Client Engineering}{Stuttgart Ehningen, Germany}
+      \resumeItemListStart
+        \resumeItem{Built multiple prototypes for Watson OpenScale to monitor LLM performance on IBM Cloud Pak for Data}
+        \resumeItem{Deployed a demo cluster on OpenShift in a successful client engagement}
+        \resumeItem{Collaborated with an offshore team in India to troubleshoot and resolve issues}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Junior Java Developer}{Sep. 2019 -- July 2022}
+      {DESY Research Institute}{Hamburg, Germany}
+      \resumeItemListStart
+        \resumeItem{Development of a distributed file system for scientific data, dCache, in Java}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {QA Engineer (Fulltime Role)}{Apr. 2019 -- Aug. 2019}
+      {Unitymedia via Prodapt Solutions Pvt. Ltd.}{Cologne, Germany}
+      \resumeItemListStart
+        \resumeItem{Created a resource planning tool with Excel and VBA}
+        \resumeItem{Test execution and test planning for a B2B platform}
+        \resumeItem{Testing internal tools with IBM AS400}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Project Management Intern}{Oct. 2018 -- Mar. 2019}
+      {Testbirds GmbH}{Munich, Germany}
+      \resumeItemListStart
+        \resumeItem{Completed crowd test evaluation, including a presentation of the results to clients}
+        \resumeItem{Template development in Excel and with Power BI and R}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Semantix}}{Nov. 2024 -- Feb. 2025}
+          \resumeItemListStart
+            \resumeItem{Built a German word-guessing minigame leveraging word embeddings with vector search powered by Pinecone}
+            \resumeItem{Deployed using Vercel -- \href{https://semantix-green.vercel.app/login}{\underline{semantix-green.vercel.app}}}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{Minecraft Open Database (MCODBC)}}{Mar. 2021 -- present}
+          \resumeItemListStart
+            \resumeItem{Co-developed a custom database language, Slim SQL, inspired by MySQL, in Java}
+            \resumeItem{Created a small website for database requests and documentation in React.js}
+            \resumeItem{Provided a REST API to interact with the Slim SQL database using Java Spring Boot}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{EveryOneCounts.de} \emph{(Founded after a hackathon against the covid pandemic)}}{Mar. 2020 -- Aug. 2020}
+          \resumeItemListStart
+            \resumeItem{Visualized social distancing in the corona pandemic using multiple data sources}
+            \resumeItem{Project went viral and I talked about it in the media}
+            \resumeItem{Developed a prototype to count customers in public spaces using 3D printing and an ESP32 in C}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+
+
+%
+%-----------KNOWLEDGE AND INTERESTS-----------
+\section{Knowledge and Interests}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: German -- native speaker, English -- business fluent, Swedish -- beginner} \\
+     \textbf{Volunteering}{: Working as a trained paramedic at events (03/2016 -- 02/2020)} \\
+     \textbf{Technologies}{: Java, Python, Excel, R, VBA, C, SQL, Docker, Linux, RaspberryPi, git, Neo4j} \\
+     \textbf{Interests}{: Machine learning, 3D printing, economics, photography, flight simulation, skiing} \\
+     \textbf{Driver's license}{: German driver's license Class B (Cars)}
+    }}
+ \end{itemize}
+
+
+%-------------------------------------------
+\end{document}
