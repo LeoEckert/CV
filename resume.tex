@@ -68,9 +68,12 @@
   }
 }
 
+\newcolumntype{L}{>{\raggedright\arraybackslash}p{0.74\textwidth}}
+\newcolumntype{R}{>{\raggedleft\arraybackslash}p{0.22\textwidth}}
+
 \newcommand{\resumeSubheading}[4]{
   \vspace{-2pt}\item
-    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+    \begin{tabular*}{0.97\textwidth}[t]{L@{\extracolsep{\fill}}R}
       \textbf{#1} & #2 \\
       \textit{\small#3} & \textit{\small #4} \\
     \end{tabular*}\vspace{-7pt}
@@ -78,14 +81,14 @@
 
 \newcommand{\resumeSubSubheading}[2]{
     \item
-    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+    \begin{tabular*}{0.97\textwidth}{L@{\extracolsep{\fill}}R}
       \textit{\small#1} & \textit{\small #2} \\
     \end{tabular*}\vspace{-7pt}
 }
 
 \newcommand{\resumeProjectHeading}[2]{
     \item
-    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+    \begin{tabular*}{0.97\textwidth}{L@{\extracolsep{\fill}}R}
       \small#1 & #2 \\
     \end{tabular*}\vspace{-7pt}
 }
