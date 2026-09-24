@@ -68,29 +68,29 @@
   }
 }
 
-\newcolumntype{L}{>{\raggedright\arraybackslash}p{0.74\textwidth}}
-\newcolumntype{R}{>{\raggedleft\arraybackslash}p{0.22\textwidth}}
+\newcolumntype{L}{>{\raggedright\arraybackslash}p{0.68\textwidth}}
+\newcolumntype{R}{>{\raggedright\arraybackslash}p{0.27\textwidth}}
 
 \newcommand{\resumeSubheading}[4]{
   \vspace{-2pt}\item
-    \begin{tabular*}{0.97\textwidth}[t]{L@{\extracolsep{\fill}}R}
+    \begin{tabular}{L@{\hspace{4pt}}R}
       \textbf{#1} & #2 \\
       \textit{\small#3} & \textit{\small #4} \\
-    \end{tabular*}\vspace{-7pt}
+    \end{tabular}\vspace{-7pt}
 }
 
 \newcommand{\resumeSubSubheading}[2]{
     \item
-    \begin{tabular*}{0.97\textwidth}{L@{\extracolsep{\fill}}R}
+    \begin{tabular}{L@{\hspace{4pt}}R}
       \textit{\small#1} & \textit{\small #2} \\
-    \end{tabular*}\vspace{-7pt}
+    \end{tabular}\vspace{-7pt}
 }
 
 \newcommand{\resumeProjectHeading}[2]{
     \item
-    \begin{tabular*}{0.97\textwidth}{L@{\extracolsep{\fill}}R}
+    \begin{tabular}{L@{\hspace{4pt}}R}
       \small#1 & #2 \\
-    \end{tabular*}\vspace{-7pt}
+    \end{tabular}\vspace{-7pt}
 }
 
 \newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
