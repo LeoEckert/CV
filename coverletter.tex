@@ -1,13 +1,12 @@
 %-------------------------
 % Cover Letter in LaTeX
-% Styled to match resume.tex
+% Classic business-letter layout
 %------------------------
 
 \documentclass[letterpaper,11pt]{article}
 
 \usepackage{latexsym}
 \usepackage[empty]{fullpage}
-\usepackage[usenames,dvipsnames]{color}
 \usepackage[hidelinks]{hyperref}
 \usepackage[english]{babel}
 \input{glyphtounicode}
@@ -16,49 +15,54 @@
 \addtolength{\oddsidemargin}{-0.5in}
 \addtolength{\evensidemargin}{-0.5in}
 \addtolength{\textwidth}{1in}
-\addtolength{\topmargin}{-.6in}
-\addtolength{\textheight}{1.2in}
+\addtolength{\topmargin}{-.75in}
+\addtolength{\textheight}{1.5in}
 
 \urlstyle{same}
 \raggedbottom
 \raggedright
 \setlength{\parindent}{0pt}
-\setlength{\parskip}{10pt}
+\setlength{\parskip}{11pt}
 
 \pdfgentounicode=1
 
 \begin{document}
+\small
 
-%----------HEADING----------
-\begin{center}
-    \textbf{\Huge \scshape Leonard Eckert} \\ \vspace{1pt}
-    \small +49 17657250600 $|$ \href{mailto:leonard.eckert99@gmail.com}{\underline{leonard.eckert99@gmail.com}} $|$
-    \href{https://linkedin.com/in/leonard-eckert/}{\underline{linkedin.com/in/leonard-eckert}}
-\end{center}
+%----------SENDER-----------
+Leonard Eckert \\
+Stockholm, Sweden \\
+\href{mailto:leonard.eckert99@gmail.com}{leonard.eckert99@gmail.com} $\cdot$ +49 17657250600 $\cdot$
+\href{https://linkedin.com/in/leonard-eckert/}{linkedin.com/in/leonard-eckert}
 
-\vspace{10pt}
+\vspace{18pt}
 
-\small Stockholm, \today
-
-\vspace{4pt}
-
-\small Accenture \\
+%----------RECIPIENT-----------
+Accenture \\
 Spring Internship 2027 \\
 Stockholm
 
-\vspace{10pt}
+\vspace{18pt}
 
-\small \textbf{Track: AI \& Data}
+\today
 
-\small Dear Hiring Team,
+\vspace{18pt}
 
-\small I'm applying for the AI \& Data track of Accenture's Spring Internship. During my internships with IBM Client Engineering, I sat in client workshops and saw how much a good recommendation depends on explaining data clearly to people who aren't data people. That's the part of this role I'm most drawn to.
+\textbf{Application: Spring Internship 2027 -- AI \& Data Track}
 
-\small At Bosch Research, I built a Spark pipeline processing over 30 billion records, and during an internship at IBM Research I designed an evaluation framework for large language models. I like turning messy data into something a client can actually act on.
+\vspace{6pt}
 
-\small Would love to talk more.
+Dear Hiring Team,
 
-\small Best, \\
-Leonard
+I'm applying for the AI \& Data track of Accenture's Spring Internship. During my internships with IBM Client Engineering, I sat in client workshops and saw how much a good recommendation depends on explaining data clearly to people who aren't data people. That's the part of this role I'm most drawn to.
+
+At Bosch Research, I built a Spark pipeline processing over 30 billion records, and during an internship at IBM Research I designed an evaluation framework for large language models. I like turning messy data into something a client can actually act on.
+
+Would love to talk more.
+
+\vspace{18pt}
+
+Best regards, \\
+Leonard Eckert
 
 \end{document}
